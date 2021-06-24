@@ -1,0 +1,36 @@
+.artworks {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.artworksMasonry {
+  max-width: 1620px;
+  display: flex;
+  margin-left: -8px;
+  width: auto;
+}
+
+.artworksMasonryColumn {
+  padding-left: 8px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style masonry items */
+.artworksMasonryColumn > div {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 400px) {
+  .artworks {
+    padding: 16px;
+  }
+
+  .artworksMasonry {
+    margin-left: -16px;
+  }
+
+  .artworksMasonryColumn {
+    padding-left: 16px;
+  }
+}
